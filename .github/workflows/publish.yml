@@ -18,12 +18,12 @@ jobs:
       - run: npm run test-ci
       - name: Publish beta version to npm
         if: "github.event.release.prerelease"
-        run: npm publish --tag beta
+        run: npm publish --tag beta --scope=@jason-green --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Publish to npm
         if: "!github.event.release.prerelease"
-        run: npm publish
+        run: npm publish --scope=@jason-green --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Commit bundles to ajv-dist
