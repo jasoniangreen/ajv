@@ -41,7 +41,7 @@
       "text-summary"
     ]
   },
-  "repository": "ajv-validator/ajv",
+  "repository": "jasoniangreen/ajv",
   "keywords": [
     "JSON",
     "schema",
@@ -54,7 +54,7 @@
   ],
   "author": "Evgeny Poberezkin",
   "license": "MIT",
-  "bugs": "https://github.com/ajv-validator/ajv/issues",
+  "bugs": "https://github.com/jasoniangreen/ajv/issues",
   "homepage": "https://ajv.js.org",
   "runkitExampleFilename": ".runkit_example.js",
   "dependencies": {
